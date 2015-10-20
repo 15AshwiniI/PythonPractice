@@ -6,14 +6,19 @@ words = open("spell.words.txt").readlines()
 
 #The strip function is needed to remove the newline character at the end of each word.
 words = map(lambda x: x.strip(), words)
-print "a" in words
-for i in range(1000) : a = 'zygotic' in words
-print "completed"
 
 test = open("Words.txt").readlines()
-#test = map(lambda y: y.strip(), test)
+print test
 test = test[0].split()
-print "cat is in words?"
-print "cat" in words
-print test[1]
+
+counter = 0;
+for t in range(0,len(test)):
+    if test[t] in words:
+    	t + 1
+    else:
+    	print test[t] + " is not a word"
+    	counter = counter + 1
+
+if counter is 0:
+	print "There were no spelling errors in this file"
 
