@@ -1,22 +1,28 @@
-print "Calculator"
+print "Welcome to Calculator!"
 
-#addition
-x = 1
-y = 2
-z = x + y
-print z
+print "Enter your first number"
+a = input()
 
-print "Enter a word"
-s = raw_input()
-print s
+print "Enter your second number"
+b = input()
 
-print "Enter a word"
-m = raw_input()
-print s + " " + m
+print "What calculation whould you like to do?"
+print "Addition, Subtraction, Multiplication, Division"
+p = raw_input()
 
-print "Enter a number"
-m = input()
-print "Enter another number"
-n = input()
-#print "Product of " + m + " and " + n
-print m * n
+if p == "Addition":
+    print "Answer: "+ str(a + b)
+
+elif p == "Subtraction":
+    print "Answer: "+ str(a - b)
+
+elif p == "Multiplication":
+    print "Answer: "+ str(a * b)
+
+elif p == "Division":
+    print "Answer: "+ str(a / b)
+
+else:
+    print "Not a valid calculation"
+
+print "goodbye!"
