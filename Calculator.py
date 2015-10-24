@@ -1,3 +1,4 @@
+#this is how you comment in python
 print "Welcome to Calculator!"
 
 print "Enter your first number"
